@@ -23,7 +23,16 @@ $ terraform output mx_records
 $ terrafomr output txt_records 
 ```
 
-Example output:
+Create a Terraform variable file:
+```
+$ terraform output >example.com.tfvars
+```
+or auto loaded variable file:
+```
+$ terraform output >example.com.auto.tfvars
+```
+
+Example data structure output:
 ```
 $ terraform output
 a_records = [
