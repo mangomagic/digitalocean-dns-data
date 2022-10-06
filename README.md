@@ -35,6 +35,7 @@ $ terraform output >example.com.auto.tfvars
 Example data structure output:
 ```
 $ terraform output
+domain = "example.com"
 a_records = [
   {
     "ip" = "192.160.0.1"

@@ -1,6 +1,6 @@
-# output "all" {
-#   value = data.digitalocean_records.all
-# }
+output "domain" {
+  value = var.domain
+}
 
 output "a_records" {
   value = local.a_records
