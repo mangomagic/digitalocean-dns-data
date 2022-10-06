@@ -17,16 +17,16 @@ $ terraform output
 
 or individually as follows:
 ```
-$ terraform output a_data
-$ terraform output cname_data
-$ terraform output mx_data
-$ terrafomr output txt_data 
+$ terraform output a_records
+$ terraform output cname_records
+$ terraform output mx_records
+$ terrafomr output txt_records 
 ```
 
 Example output:
 ```
 $ terraform output
-a_data = [
+a_records = [
   {
     "ip" = "192.160.0.1"
     "name" = "@"
@@ -34,7 +34,7 @@ a_data = [
     "uid" = "example_com_104890788"
   },
 ]
-cname_data = [
+cname_records = [
   {
     "domain" = "@"
     "name" = "www"
@@ -42,7 +42,7 @@ cname_data = [
     "uid" = "www_345669174"
   },
 ]
-mx_data = [
+mx_records = [
   {
     "domain" = "@"
     "hostname" = "mail.protonmail.ch"
@@ -58,7 +58,7 @@ mx_data = [
     "uid" = "mailsec_protonmail_ch_153755558"
   },
 ]
-txt_data = [
+txt_records = [
   {
     "hostname" = "@"
     "ttl" = 300
