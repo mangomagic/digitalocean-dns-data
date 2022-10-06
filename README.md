@@ -38,7 +38,7 @@ $ terraform output
 domain = "example.com"
 a_records = [
   {
-    "ip" = "192.160.0.1"
+    "ip" = "192.168.0.1"
     "name" = "@"
     "ttl" = 3600
     "uid" = "example_com_104890788"
