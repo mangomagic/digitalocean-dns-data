@@ -1,12 +1,12 @@
-# Read Digital Ocean DNS Data Terraform Module
+# Output Digital Ocean DNS Records as a Data Structure
 
-Create a data structure from existing Digital Ocean DNS records for use with the digitalocean-dns Terraform module.
+Create a data structure from existing Digital Ocean DNS records for use with the [digitalocean-dns](https://github.com/mangomagic/digitalocean-dns) Terraform module.
 
 ### Usage
-
+Apply the Terraform to read the Digital Ocean output the data structure. The following assumes you have your Digital Ocean access token in the $DO_TOKEN environment variable.
 ```
 $ terraform init
-$ terraform apply -var domain=example.com -auto-approve
+$ terraform apply -var domain=example.com -var do_token=$DO_TOKEN -auto-approve
 ```
 
 You can show the data structures with:
